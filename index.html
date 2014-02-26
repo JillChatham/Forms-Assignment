@@ -18,21 +18,26 @@
     <div class="row">
       <div class="large-8 medium-8 columns">
         <!-- Grid Example -->
-        <form data-abide action="http://getsimpleform.com/messages?form_api_token=6ddf889bed286da4c41642668be9c1e6" method="post">
+        <form data-abide action="http://getsimpleform.com/messages?form_api_token=fb097b52b97c0ae18655b0db0c9a35b0" method="post">
 				  <div class="row">
             <input type='hidden' name='redirect_to' value='http://google.com' />
 
-				    <div class="large-6 columns">
-				      <label>Domain</label>
-				      <input type="text" name='domain' pattern="domain" placeholder="google.com" required />
-              <small class="error">Please give a valid domain. No slashes allowed</small>
+				    <div class="medium-4 columns">
+				      <label>Customer Name</label>
+				      <input type="text" name='customer' placeholder="your name here" required />
+              <small class="error">Please give your name here!</small>
 				    </div>
-            <div class="large-6 medium-6 columns">
+            <div class="medium-4 columns">
+              <label>Phone Number</label>
+              <input type="text" name='phone' placeholder="(999) 999-9999" required />
+            </div>
+            <div class="medium-4 medium-4 columns">
               <label>E-mail</label>
-              <input type="email" name='email'  pattern="email" required />
+              <input type="email" name='email'  pattern="email" placeholder="jenny@email.com" required />
               <small class="error">Please give a valid email.</small>
             </div>
 				  </div>
+
 				  <div class="row">
 
 				    <div class="large-6 medium-6 columns">
@@ -49,12 +54,16 @@
 				  </div>
 				  <div class="row">
 				    <div class="large-12 columns">
-				      <label>Which Dog Do you Want?</label>
-				      <select name="dog">
-				        <option value="husker">Husker</option>
-				        <option value="starbuck">Starbuck</option>
-				        <option value="hotdog">Hot Dog</option>
-				        <option value="apollo">Apollo</option>
+				      <label>Wraps</label>
+				      <select name="Choose a wrap:">
+				        <option value="chickpea">Spicy Chickpea Wrap</option>
+				        <option value="panSeared">Pan Seared Tofu</option>
+				        <option value="bbq">BBQ Seitan</option>
+				        <option value="chimichurri">Chimichurri Seitan</option>
+                <option value="bella">The Bella</option>
+                <option value="blackBean">Black Bean</option>
+                <option value="blackened">Blackened Tofu</option>
+                <option value="eggless">Eggless Tofu Salad</option> 
 				      </select>
 				    </div>
 				  </div>
