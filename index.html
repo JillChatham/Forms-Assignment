@@ -54,9 +54,10 @@
 				  </div>
 				  <div class="row">
 				    <div class="large-12 columns">
-				      <label>Wraps</label>
-				      <select name="Choose a wrap:">
-				        <option value="chickpea">Spicy Chickpea Wrap</option>
+				      <label>Choose a Wrap:</label>
+				      <select name="wraps:">
+				        <option value="noWrap">none</option>
+                <option value="chickpea">Spicy Chickpea Wrap</option>
 				        <option value="panSeared">Pan Seared Tofu</option>
 				        <option value="bbq">BBQ Seitan</option>
 				        <option value="chimichurri">Chimichurri Seitan</option>
@@ -67,18 +68,45 @@
 				      </select>
 				    </div>
 				  </div>
+      
+            <div class="large-12 columns">
+              <label>Choose a Salad:</label>
+              <select name="salads:">
+                <option value="noSalad">none</option>
+                <option value="egglessSalad">Eggless Tofu Salad</option>
+                <option value="couscous">Couscous Salad</option>
+                <option value="quinoa">Quinoa Salad</option>
+              </select>
+            </div>
+
+            <div class="large-12 columns">
+              <label>Choose a Drink:</label>
+              <select name="drink">
+                <option value="noSmoothie">none</option>
+                <option value="strawBanana">Strawberry Banana Smoothie</option>
+                <option value="mango">Mango Smoothie</option>
+                               <option value="lemonade">Organic Blueberry Lemonade</option>
+                <option value="tea">Raspberry Hibiscus Iced Tea</option>
+                <option value="water">Bottled Water</option>
+                </select>
+            </div>
+        </div>
 				  <div class="row">
-				    <div class="large-6 medium-6 columns">
-				      <label>Choose Your Favorite Pokemon</label>
-				      <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Red</label>
-				      <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Blue</label>
+				    <div class="large-12 medium-12 columns">
+				      <label>Choose Your Sides:</label>
+				      <input type="radio" name="side" value="fries" id="pokemonRed"><label for="pokemonRed">Baked Rosemary Fries</label>
+				      <input type="radio" name="side" value="chips" id="pokemonBlue"><label for="pokemonBlue">Bag of chips</label>
+                 <input type="radio" name="side" value="rice" id="pokemonBlue"><label for="pokemonBlue">Cup of organic quinoa/rice/corn mix</label>
 				    </div>
-				    <div class="large-6 medium-6 columns">
-				      <label>Accept Terms</label>
+            </div>
+            <div class="row">
+              <div class="columns medium-11">
+				      <label>Vegan?</label>
 				      <input id="checkbox1" required name="acceptTerms" type="checkbox"><label for="checkbox1">Yes</label>
               <small class="error">You must accept the terms</small>
-				    </div>
-				  </div>
+				      </div>
+            </div>
+				  
 				  <div class="row">
 				    <div class="large-12 columns">
 				      <label>Comments</label>
